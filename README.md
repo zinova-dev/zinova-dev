@@ -1,27 +1,28 @@
- Proposal SaaS
+# Hi there, I'm Francisco Zinova
 
-A full-stack SaaS application that helps freelancers create, manage, and export professional commercial proposals.
+**Full-Stack Developer | Product-minded Engineer**
 
-Tech Stack: Django Ninja (Backend) · Next.js (Frontend) · PostgreSQL · Tailwind CSS
+I don't just write code — I read what the client actually needs, break it into edge cases, and ship tested, production-ready solutions. My focus is catching requirement mismatches, security gaps, and bugs before they reach the client.
 
- The Problem
-Freelancers waste hours formatting proposals in Word or Google Docs. This tool streamlines the process: users input their scope of work, the system calculates taxes and totals, and generates a clean PDF ready to send to clients.
+- Currently building: Real-time analytics tools and SaaS applications.
+- Based in: Luanda, Angola (Remote)
+- Ask me about: Python, Django, Next.js, PostgreSQL, and clean architecture.
+- How to reach me: www.linkedin.com/in/zinova-dev
 
- Engineering Decisions
+### Tech Stack
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-- Backend Choice (Django over FastAPI): Chose Django Ninja because the project requires a built-in admin interface for internal operations and a mature ORM for complex relational data (Users -> Proposals -> Line Items). The async performance of FastAPI was not necessary for this CRUD-heavy workflow.
-- Frontend Choice (Next.js over React+Vite):** Used Next.js for the public-facing landing page to ensure SEO optimization and fast First Contentful Paint. The authenticated dashboard leverages Next.js server components for secure data fetching.
-- PDF Generation: Rejected client-side PDF generation to avoid browser inconsistencies. Implemented server-side generation using Python's `WeasyPrint` with HTML templates, ensuring consistent formatting across all devices.
+### Featured Projects
 
- Features
-- User authentication (JWT)
-- CRUD for Proposals and Clients
-- Tax calculation logic (Customizable per proposal)
-- Server-side PDF export
-- Dashboard with proposal status tracking (Draft, Sent, Accepted)
+**[Proposal SaaS](https://github.com/zinova-dev/proposal-saas)**
+A full-stack SaaS application for freelancers to create, manage, and export commercial proposals. Built with Django Ninja and Next.js.
+- Live Demo: [proposal-saas-lovat.vercel.app](https://proposal-saas-lovat.vercel.app)
 
-Local Setup
-1. Clone the repo.
-2. Backend: `cd backend && pip install -r requirements.txt && python manage.py migrate && python manage.py runserver`
-3. Frontend: `cd frontend && npm install && npm run dev`
-4. Set up `.env` for database credentials.
+**[Dev Analytics Dashboard](https://github.com/zinova-dev/dev-analytics-dashboard)**
+A real-time analytics dashboard that visualizes GitHub profile statistics using WebSockets. Built with Django Channels and Next.js.
+- Live Demo: [dev-analytics-dashboard-two.vercel.app](https://dev-analytics-dashboard-two.vercel.app)
